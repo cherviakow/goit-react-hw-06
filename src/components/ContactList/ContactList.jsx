@@ -69,5 +69,3 @@ export function ContactList(){
 //   };
   
 //   export default ContactList;
-
-
