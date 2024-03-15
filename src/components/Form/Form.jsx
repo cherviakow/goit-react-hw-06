@@ -70,7 +70,7 @@ export function Form() {
         />
       </label>
       <label>
-        <h2 className={css.plateName}>Numbers</h2>
+        <h2 className={css.plateName}>Number</h2>
         <input
           className={css.item}
           type="tel"
