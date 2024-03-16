@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import Filter from "./components/Filter/Filter";
 import Notification from "./components/Notification/Notification";
 import css from './App.module.css'
+import React from "react";
 
 
 
@@ -23,7 +24,7 @@ export function App(){
   )
 }
 
-
+export default App
 
 
 

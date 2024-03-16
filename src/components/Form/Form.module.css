@@ -16,7 +16,7 @@
     width: 70%;
     padding: 5px;
     cursor: pointer;
-    border: 1px solid rgb(166, 166, 166);
+    border: 1px solid rgb(161, 161, 161);
 }
 
 .formBtn{
@@ -24,8 +24,8 @@
     margin-bottom: 25px;
     font-size: 15px;
     cursor: pointer;
-    background-color: white;
-    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px solid black;
     transition: all 500ms ease;
 }
 
