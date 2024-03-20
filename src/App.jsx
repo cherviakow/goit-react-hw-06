@@ -1,7 +1,7 @@
-import { Form } from "./components/Form/Form";
-import { ContactList } from "./components/ContactList/ContactList";
+import { ContactForm } from "./components/ContactForm/ContactForm";
+import { Contact } from "./components/Contact/Contact";
 import { useSelector } from "react-redux";
-import Filter from "./components/Filter/Filter";
+import SearchBox from "./components/SearchBox/SearchBox";
 import Notification from "./components/Notification/Notification";
 import css from './App.module.css'
 import React from "react";
@@ -14,12 +14,12 @@ export function App(){
   return (
     <div className="container">
       <h1 className={css.title}>Phonebook</h1>
-      <Form/>
+      <ContactForm/>
       <h2 className={css.title}>Contacts</h2>
       {contacts.length === 0 ? (
         <Notification message='No contact in your book yet'/>
-      ): (<Filter/>)}
-      <ContactList/>
+      ): (<SearchBox/>)}
+      <Contact/>
     </div>
   )
 }

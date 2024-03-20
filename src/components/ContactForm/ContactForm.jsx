@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import css from './Form.module.css';
+import css from './ContactForm.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contactsSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import { nanoid } from 'nanoid';
 
-export function Form() {
+export function ContactForm() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();

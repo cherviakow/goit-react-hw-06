@@ -1,11 +1,11 @@
 import React from 'react';
-import css from './ContactList.module.css';
+import css from './Contact.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeContact } from '../../redux/contactsSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export function ContactList(){
+export function Contact(){
   const dispatch = useDispatch();
   const filterValue = useSelector(state => state.filter.filter);
   const contacts = useSelector(state => state.contacts.contacts);
