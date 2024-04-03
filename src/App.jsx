@@ -1,30 +1,53 @@
-import { ContactForm } from "./components/ContactForm/ContactForm";
-import { Contact } from "./components/Contact/Contact";
-import { useSelector } from "react-redux";
+import "./App.css";
+import "modern-normalize";
+import Form from "./components/Form/Form";
+import Layout from "./components/Layout/Layout";
 import SearchBox from "./components/SearchBox/SearchBox";
-import Notification from "./components/Notification/Notification";
-import css from './App.module.css'
-import React from "react";
+import ContactList from "./components/ContactList/ContactList";
 
-
-
-export function App(){
-  const contacts = useSelector(state => state.contacts.contacts);
-
+function App() {
   return (
-    <div className="container">
-      <h1 className={css.title}>Phonebook</h1>
-      <ContactForm/>
-      <h2 className={css.title}>Contacts</h2>
-      {contacts.length === 0 ? (
-        <Notification message='No contact in your book yet'/>
-      ): (<SearchBox/>)}
-      <Contact/>
-    </div>
-  )
+    <Layout>
+      <Form />
+      <SearchBox />
+      <ContactList />
+    </Layout>
+  );
 }
 
-export default App
+export default App;
+
+
+// import { ContactForm } from "./components/ContactForm/ContactForm";
+// import { useSelector } from "react-redux";
+// import SearchBox from "./components/SearchBox/SearchBox";
+// import Notification from "./components/Notification/Notification";
+// import css from './App.module.css'
+// import React from "react";
+// import ContactList from "./components/ContactList/ContactList";
+// import Contact from "./components/Contact/Contact";
+
+
+
+// export function App(){
+//   const contacts = useSelector(state => state.contacts.contacts);
+
+//   return (
+//     <div className="container">
+//       <h1 className={css.title}>Phonebook</h1>
+//       <ContactForm/>
+//       <h2 className={css.title}>Contacts</h2>
+//       {contacts.length === 0 ? (
+//         <Notification message='No contact in your book yet'/>
+//       ): (<SearchBox/>)}
+//       <Contact/>
+//       <ContactList/>
+    
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
